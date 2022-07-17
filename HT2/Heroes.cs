@@ -22,5 +22,6 @@ namespace HT2
         public  double Block () =>  new Random().Next(1, BlockMax);
         public abstract void SpecialAbilities();
 
+
     }
 }
