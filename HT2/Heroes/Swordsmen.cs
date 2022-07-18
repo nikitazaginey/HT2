@@ -5,7 +5,7 @@ namespace HT2
 {
     public  class Swordsman : Heroes
     {
-        public Swordsman(string name, int health, int attkMax, int attkMin, int blockMax)
+        public Swordsman()
             : base("Swordsman", 100, 30, 20, 10) { }
         public override void SpecialAbilities()
         {

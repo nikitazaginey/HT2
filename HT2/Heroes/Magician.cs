@@ -5,7 +5,7 @@ namespace HT2
 {
     public class Magician : Heroes
     {
-        public Magician(string name, int health, int attkMax, int attkMin, int blockMax)
+        public Magician()
            : base("Magician", 70, 40, 25, 10) { }
         public override void SpecialAbilities()
         {
