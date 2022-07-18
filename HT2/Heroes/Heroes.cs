@@ -18,8 +18,8 @@ namespace HT2
             AttkMin = attkMin;
             BlockMax = blockMax;
         }
-        public double Attack() => new Random().Next(AttkMin, AttkMax);
-        public  double Block () =>  new Random().Next(1, BlockMax);
+        public int Attack() => new Random().Next(AttkMin, AttkMax);
+        public  int Block () =>  new Random().Next(1, BlockMax);
         public abstract void SpecialAbilities();
 
 
