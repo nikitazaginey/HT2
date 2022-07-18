@@ -6,11 +6,11 @@ namespace HT2
     {
         // Define the Warriors properties
         public string Name { get; set; } 
-        public int Health { get; set; } 
-        public int AttkMax { get; set; }
-        public int AttkMin { get; set; }
-        public int BlockMax { get; set; }
-        public Heroes(string name, int health, int attkMax, int attkMin, int blockMax)
+        public double Health { get; set; } 
+        public double AttkMax { get; set; }
+        public double AttkMin { get; set; }
+        public double BlockMax { get; set; }
+        public Heroes(string name, double health, double attkMax, double attkMin, double blockMax)
         {
             Name = name;
             Health = health;
@@ -18,8 +18,8 @@ namespace HT2
             AttkMin = attkMin;
             BlockMax = blockMax;
         }
-        public int Attack() => new Random().Next(AttkMin, AttkMax);
-        public  int Block () =>  new Random().Next(1, BlockMax);
+        public double Attack() => new Random().Next((int)AttkMin, (int)AttkMax);
+        public double Block () =>  new Random().Next(1, (int)BlockMax);
         public abstract void SpecialAbilities();
 
 
